@@ -1,0 +1,9 @@
+.groceryitem {
+   	height: 100px;
+    width: 100px;  
+}
+
+
+button.addToList.addToList {
+    margin-top: 5px;
+}

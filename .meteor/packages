@@ -1,0 +1,8 @@
+standard-app-packages
+iron:router
+accounts-ui
+accounts-password
+semantic:ui
+flemay:less-autoprefixer
+jquery
+semantic:ui-css

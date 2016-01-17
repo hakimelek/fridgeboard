@@ -1,0 +1,164 @@
+
+i.icon.apple:before {
+  content: "\e000";
+}
+i.icon.ananas:before {
+  content: "\e001";
+}
+i.icon.grapes:before {
+  content: "\e002";
+}
+.foodie-icons-06:before {
+  content: "\e003";
+}
+.foodie-icons-07:before {
+  content: "\e004";
+}
+.banana:before {
+  content: "\e005";
+}
+.foodie-icons-09:before {
+  content: "\e006";
+}
+.melon:before {
+  content: "\e007";
+}
+.foodie-icons-11:before {
+  content: "\e008";
+}
+.foodie-icons-12:before {
+  content: "\e009";
+}
+.foodie-icons-13:before {
+  content: "\e00a";
+}
+.foodie-icons-19:before {
+  content: "\e00b";
+}
+.foodie-icons-20:before {
+  content: "\e00c";
+}
+.onion:before {
+  content: "\e00d";
+}
+.melon2:before {
+  content: "\e00e";
+}
+.foodie-icons-23:before {
+  content: "\e00f";
+}
+.foodie-icons-24:before {
+  content: "\e010";
+}
+.strawberry:before {
+  content: "\e011";
+}
+.foodie-icons-26:before {
+  content: "\e012";
+}
+.foodie-icons-32:before {
+  content: "\e013";
+}
+.foodie-icons-33:before {
+  content: "\e014";
+}
+.foodie-icons-34:before {
+  content: "\e015";
+}
+.foodie-icons-35:before {
+  content: "\e016";
+}
+.foodie-icons-36:before {
+  content: "\e017";
+}
+.foodie-icons-37:before {
+  content: "\e018";
+}
+.foodie-icons-38:before {
+  content: "\e019";
+}
+.paper:before {
+  content: "\e01a";
+}
+.chicken2:before {
+  content: "\e01b";
+}
+.pizza:before {
+  content: "\e01c";
+}
+.mushroom:before {
+  content: "\e01d";
+}
+.croissant:before {
+  content: "\e01e";
+}
+.foodie-icons-49:before {
+  content: "\e01f";
+}
+.foodie-icons-50:before {
+  content: "\e020";
+}
+.beef:before {
+  content: "\e021";
+}
+.fish:before {
+  content: "\e022";
+}
+.foodie-icons-14:before {
+  content: "\e023";
+}
+.foodie-icons-15:before {
+  content: "\e024";
+}
+.foodie-icons-16:before {
+  content: "\e025";
+}
+.foodie-icons-17:before {
+  content: "\e026";
+}
+.foodie-icons-18:before {
+  content: "\e027";
+}
+.foodie-icons-27:before {
+  content: "\e028";
+}
+.foodie-icons-28:before {
+  content: "\e029";
+}
+.carrot:before {
+  content: "\e02a";
+}
+.foodie-icons-30:before {
+  content: "\e02b";
+}
+.foodie-icons-31:before {
+  content: "\e02c";
+}
+.foodie-icons-40:before {
+  content: "\e02d";
+}
+.foodie-icons-41:before {
+  content: "\e02e";
+}
+.chicken:before {
+  content: "\e02f";
+}
+.eggs:before {
+  content: "\e030";
+}
+.foodie-icons-44:before {
+  content: "\e031";
+}
+.wine:before {
+  content: "\e032";
+}
+.foodie-icons-54:before {
+  content: "\e033";
+}
+.foodie-icons-02:before {
+  content: "\e034";
+}
+.foodie-icons-01:before {
+  content: "\e035";
+}
+

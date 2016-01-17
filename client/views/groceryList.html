@@ -1,0 +1,23 @@
+<template name="groceryList">
+
+  		<table class="ui blue table">
+		  <thead>
+		    <tr><th>Remove</th>
+		    <th>Item</th>
+		    <th>quantity</th>
+		    <th>For who?</th>
+		  </tr></thead><tbody>
+		   {{#each groceryItems}}
+		    <tr>
+		      <td><button class="delete">&times;</button></td>
+		      <td>{{text}}</td>
+		      <td>{{quantity}}</td>
+		      <td>{{owner}}</td>
+		    </tr>
+		   {{/each}}
+		  </tbody>
+		</table>
+
+
+</template>
+
