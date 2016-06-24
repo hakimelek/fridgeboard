@@ -50,41 +50,36 @@ Template.menu.events({
 
 });
 
-
-
-
-
-
-
 Template.dashboard.events({
 
-	"click .todo": function(event){
-	    Router.go('/todo');
-  	},
+	// "click .todo": function(event){
+	//     Router.go('/todo');
+	 //  	},
 
   	"click .grocery": function(event){
 	    Router.go('/groceryList');
   	},
 
-  	"click .calendar": function(event){
-	    Router.go('/calendar');
-  	},
-
-  	"click .rules": function(event){
-	    Router.go('/rules');
-  	},
-
-  	"click .chat": function(event){
+	"click .chat": function(event){
 	    Router.go('/chat');
   	},
 
-  	"click .payment": function(event){
-	    Router.go('/payment');
-  	},
+  	// "click .calendar": function(event){
+	  //   Router.go('/calendar');
+  	// },
 
+  	// "click .rules": function(event){
+	  //   Router.go('/rules');
+  	// },
 
+  	
+
+  	// "click .payment": function(event){
+	  //   Router.go('/payment');
+  	// }
 
 });
+
 
 
 

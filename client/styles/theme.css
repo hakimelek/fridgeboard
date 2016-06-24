@@ -135,7 +135,10 @@ button.addToList.addToList {
 }
 
 .groceryneeded{
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-top: 10px;
 	border: none;
+}
+
+button .additem{
+	margin-top: 20px;
 }
