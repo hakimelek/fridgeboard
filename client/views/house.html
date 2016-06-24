@@ -1,0 +1,45 @@
+<template name="house">
+
+<div class="ui container">
+
+	{{#if currentUser.profile.address}}
+
+		<p>Current address: {{myhouse.full_address}}</p>
+
+		<ul>
+		{{#each myroommates}}
+			<li>{{profile.firstName}}
+				<img class="ui tiny circular image" src="{{profile.thumb}}">
+			</li>
+
+		{{/each}}
+		</ul>
+
+ 	<a class="ui button leave" href="#">Leave the House</a>
+
+
+
+	{{else}}
+
+		<h1>Add a house</h1>
+
+		<form class="house ui form">
+
+		    <div class="fields">
+	          <div class="twelve wide field ui left icon input">
+				  <input type="text"  id="autocomplete" name="address" placeholder="Street Address">
+				  <i class="home icon"></i>
+	          </div>
+	          <div class="four wide field">
+	            <input type="text" class="apt" name="apt" placeholder="Apt #">
+	          </div>
+	        </div>
+
+
+		    <button class="ui button" type="submit">Confirm</button>
+
+		</form>
+	{{/if}}
+
+</div>
+</template>

@@ -1,0 +1,45 @@
+<template name="chat">
+	 <div class="ui container">
+
+	 <div class="chat_messages"> 
+		  {{> messages }} 
+     </div>		  
+		  {{> input }}
+	 </div>
+
+</template>
+
+
+<template name="messages">
+  <div class="ui comments">
+  		{{#each messages}}
+		   {{>message}}
+  		{{/each}}
+   </div>
+</template>
+
+<template name="message">
+	<div class="comment">
+	    <a class="avatar">
+	      <img src="{{#if sender.profile.thumb}} {{sender.profile.thumb}} {{else}}/images/matt.jpg{{/if}}">
+	    </a>
+	    <div class="content">
+	      <a class="author">{{sender.profile.firstName}}</a>
+	      <div class="metadata">
+	        <span class="date">{{createdAt}}</span>
+	      </div>
+	      <div class="text">
+	        {{text}}
+	      </div>
+	    </div>
+	  </div>
+</template>
+<template name="input">
+	<form class="messages ui form">
+      <div class="field">
+        <input type="text" name="message">
+      </div>
+     </form>
+</template>
+
+

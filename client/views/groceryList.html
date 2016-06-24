@@ -1,23 +1,45 @@
 <template name="groceryList">
 
-  		<table class="ui blue table">
-		  <thead>
-		    <tr><th>Remove</th>
-		    <th>Item</th>
-		    <th>quantity</th>
-		    <th>For who?</th>
-		  </tr></thead><tbody>
-		   {{#each groceryItems}}
-		    <tr>
-		      <td><button class="delete">&times;</button></td>
-		      <td>{{text}}</td>
-		      <td>{{quantity}}</td>
-		      <td>{{owner}}</td>
-		    </tr>
-		   {{/each}}
-		  </tbody>
-		</table>
+<div class="ui container">
+	  <div class="row">
+	    <div class="column centered">
+			<div class="ui stackable column grid">
+				  <ul>
+					  <li class="house tenantselector column">
+					        <img class="ui tiny circular image" src="/images/house_icon.png">
+					  </li>
+					  {{#each myroommates}}
+					  <li class="tenantselector column">
+					        <img class="ui tiny circular image" src="{{profile.thumb}}">
+					  </li>
+					  {{/each}}
+				  </ul>
+			</div>
+	    </div>
+	  </div>
+	  <div class="row">
+			<div class="ui middle aligned divided list">
+			 {{#each groceryItems}}
+			  <div class="groceryneeded item">
+			    <div class="right floated content">
+			        <div class="ui checkbox">
+					  <input type="checkbox" name="example">
+					</div>
+			    </div>
+				<i class="red large minus circle icon delete"></i>
+			    <div class=" content">
+			      <h3>{{item}} ....... X{{quantity}}</h3>
+			    </div>
+			  </div>
+			{{/each}}
+	  		</div>
+  		</div>
 
-
+  <a href="/groceryMarket">
+  	<button class=" fluid ui button blue icon additem">
+         <i class=" small plus icon"></i>
+  	</button>
+  </a>
+</div>
 </template>
 

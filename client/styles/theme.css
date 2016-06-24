@@ -7,3 +7,135 @@
 button.addToList.addToList {
     margin-top: 5px;
 }
+
+
+@keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.white{
+	color: white;
+}
+
+.error {
+  animation: fadeOut 2700ms ease-in 0s 1 forwards;
+}
+
+
+
+.landing {
+	width: 100%;
+	height: 100%;
+	background:url('/images/chalkboard.jpg'), rgb(24,42,115);
+	background: -moz-linear-gradient(-45deg,  rgba(24,42,115,1) 0%, rgba(33,138,174,1) 69%, rgba(32,167,172,1) 89%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(24,42,115,1)), color-stop(69%,rgba(33,138,174,1)), color-stop(89%,rgba(32,167,172,1)));
+	background: -webkit-linear-gradient(-45deg,  rgba(24,42,115,1) 0%,rgba(33,138,174,1) 69%,rgba(32,167,172,1) 89%);
+	background: -o-linear-gradient(-45deg,  rgba(24,42,115,1) 0%,rgba(33,138,174,1) 69%,rgba(32,167,172,1) 89%);
+	background: -ms-linear-gradient(-45deg,  rgba(24,42,115,1) 0%,rgba(33,138,174,1) 69%,rgba(32,167,172,1) 89%);
+	background: linear-gradient(135deg,  rgba(24,42,115,1) 0%,rgba(33,138,174,1) 69%,rgba(32,167,172,1) 89%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182a73', endColorstr='#20a7ac',GradientType=1 );
+	border-radius: 0;
+	margin: 0em;
+	padding: 1rem 0rem 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+
+.logo {
+	font-family: chalk; 
+}
+
+.wrapper{
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+
+.menu{
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.square {
+  position: relative;
+  width: 50%;
+  max-width: 250px;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.contenu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 30%;
+}
+
+.chat{
+	background-color: #8967AC;
+}
+
+.calendar{
+	background-color: #9F5252;
+
+}
+
+.payment{
+	background-color: #8A9F52 ;
+
+}
+
+.grocery{
+	background-color: #3B4D81 ;
+
+}
+
+.todo{
+	background-color: #5AADC5;
+
+}
+
+.rules{
+	background-color: #FBB03B;
+}
+
+.grey{
+	background-color: #DDD;
+}
+
+/******* Chat *******/ 
+.comments{
+	overflow: scroll;
+	height: 100%;
+	max-width: 100%;
+}
+
+.chat_messages{
+	height: 70vh; 
+}
+
+/********* Grocery ******/ 
+.tenantselector {
+	list-style: none; 
+	display: inline-block; 
+	width: 80px;
+	height: 80px;
+}
+
+.groceryneeded{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+}

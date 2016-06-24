@@ -1,11 +1,12 @@
 <template name="groceryMarket">
+  
 
   <div class="ui container">
-
+    <a href="/groceryList" class="ui icon button blue">
+        <i class="icon arrow left"></i>
+      </a>
 
     {{#if currentUser}}
-
-               {{> loginButtons}}
      
      <div class="ui divider"></div>
 
@@ -35,14 +36,11 @@
 
 
     <div class="ui doubling stackable column">
-         <!--  <button class=" column middle aligned ui teal button icon additem groceryitem">
-                <i class=" big plus icon"></i>
-          </button> -->
-
+          
         {{#each groceryItems}}
 	  			<button class="column middle aligned ui blue button icon addToList groceryitem">
                 <i class="big inverted {{#if grocery_icon}} icon-{{grocery_icon}} {{else}} tag {{/if}} icon"></i>
-    	  				<h5>{{text}}</h5>  
+    	  				<h5>{{item}}</h5>  
             
              {{#if editmode}}
                <button class="delete corner remove red icon"></button>
@@ -56,9 +54,7 @@
        <div class="ui divider"></div>
 
 
-      <a class="ui button primary" href="/groceryList">Check out the grocery List</a>
-
-      {{>groceryList}}
+      <a class="ui button primary checklist" href="/groceryList">Check out the grocery List</a>
 
       {{else}}
            <h2>Please Login or Sign up</h2>

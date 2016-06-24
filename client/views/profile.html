@@ -1,0 +1,72 @@
+<template name="profile">
+    <div class="ui container">
+	  
+		
+
+
+		<div class="ui link cards">
+		  <div class="card">
+		    <div class="image">
+		      <img src="{{currentUser.profile.thumb}}">
+		    </div>
+		    <div class="content">
+		      <div class="header">{{currentUser.profile.firstName}} {{currentUser.profile.lastName}}</div>
+		      <div class="meta">
+		        <a>Student</a>
+		      </div>
+		      <div class="description">
+		        {{currentUser.profile.firstName}} likes to hangout with his roommates.
+		      </div>
+		    </div>
+		    <div class="extra content">
+		      <span class="right floated">
+		        Joined in {{currentUser.createdAt}}
+		      </span>
+		      <span>
+		        <i class="user icon"></i>
+		        75 Friends
+		      </span>
+		    </div>
+		  </div>
+
+		  <div class="ui card">
+
+			  <div class="content">
+			    <h4 class="ui sub header">Activity</h4>
+			    <div class="ui small feed">
+			      <div class="event">
+			        <div class="content">
+			          <div class="summary">
+			             <a>Elliot Fu</a> added <a>Jenny Hess</a> to the project
+			          </div>
+			        </div>
+			      </div>
+			      <div class="event">
+			        <div class="content">
+			          <div class="summary">
+			             <a>Stevie Feliciano</a> was added as an <a>Administrator</a>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="event">
+			        <div class="content">
+			          <div class="summary">
+			             <a>Helen Troy</a> added two pictures
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+
+			</div>
+
+
+		  
+		</div>
+
+
+
+
+
+	</div>
+</template>

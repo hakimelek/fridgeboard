@@ -2,14 +2,75 @@
   <title>Fridgeboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 </head>
 
 <body>
+    {{>meteorStatus}}
+
+    <div class="ui container">
+         {{#if currentUser}}
+          {{>menu}}
+
+          <!-- <div class="ui warning message">
+            <i class="close icon"></i>
+            <div class="header">
+              The app is still unstable, refresh if you feel that something is not loading right.
+            </div>
+          </div> -->
+         {{/if}}
+     </div>    
+
 </body>
 
 
-<template name="layout">
-   <div class="ui blurring container">
-   	 	 {{> yield}}
-   </div>
+
+<template name="menu">
+  <div class="menu">
+    <div class="ui icon top left basic dropdown button labeled icon">
+      <i class="sidebar black inverted icon"></i>
+      <div class="menu">
+        <div class="dashboard item">Dashboard</div>
+        <div class="profile item">Profile</div>
+        <div class="house item">House</div>
+        <div class="divider"></div>
+        <div class="logout ui item">Logout</div>
+      </div>
+      <span class="text">  
+        {{> loginButtons}}
+      </span>
+    </div>
+  </div> 
+</template>
+
+<template name="landing">
+  <div class="landing">
+    <div class="ui container wrapper">
+      <div class="ui logo inverted huge center aligned header">Fridgeboard</div>
+      <p class="ui center inverted aligned header">We make organizing living with others easy
+      </p>
+      <br>
+
+      <div class="ui center two  buttons">
+             <button class="ui inverted basic floated button signin">Signin</button>
+             <button class="ui inverted basic floated button signup">Signup</button>
+      </div>
+   </div> 
+  </div> 
+</template>
+
+<template name="meteorStatus"> 
+  {{#if connected}}
+  <div class="ui padded centered grid">
+    <div class="green row">
+      <p>{{status}}</p>
+    </div>
+  </div>
+  {{else}}
+    <div class="ui padded centered grid">
+      <div class="red row">
+        <p>{{status}}</p>
+      </div>
+  </div>
+  {{/if}}    
 </template>

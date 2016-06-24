@@ -1,48 +1,68 @@
- Meteor.publish("groceryMarket", function () {
-    return GroceryMarket.find();
- });
- 
-Meteor.publish("groceryList", function () {
-    return GroceryList.find();
- });
 
 
  Meteor.startup(function () {
- 	if (GroceryMarket.find().count() === 0) {
-    	var items = [
-         {
-         	'text': 'Beef', 
-            'grocery_icon': 'beef'  
-         },
- 		   {  
-            'text': 'Chicken', 
-            'grocery_icon': 'chicken'  
+ // 	if (GroceryMarket.find().count() === 0) {
+ //    	var items = [
+ //         {
+ //         	'item': 'Beef', 
+ //            'grocery_icon': 'beef',  
+ //            'default': true,
+ //            'createdAt': new Date()
+ //         },
+ // 		 {  
+ //            'item': 'Chicken', 
+ //            'grocery_icon': 'chicken',
+ //            'default': true,
+ //            'createdAt': new Date() 
     
-         },
-         {
-         	'text': 'Banana', 
-            'grocery_icon': 'banana',
-         }, 
-         {  
-            'text': 'Eggs',  
-            'grocery_icon': 'eggs'  
-         },
-         {
-         	'text': 'Pizza',
-            'grocery_icon': 'pizza'  
-         }, 
-         {  
-            'text': 'Onions', 
-            'grocery_icon': 'onion'  
-         },
-         {
-         	'text': 'Ananas',
-            'grocery_icon': 'ananas'  
-         }
-      ];
+ //         },
+ //         {
+ //         	'item': 'Banana', 
+ //            'grocery_icon': 'banana',
+ //            'default': true,
+ //            'createdAt': new Date()
+ //         }, 
+ //         {  
+ //            'item': 'Eggs',  
+ //            'grocery_icon': 'eggs',
+ //            'default': true,
+ //            'createdAt': new Date()        
+ //         },
+ //         {
+ //         	'item': 'Pizza',
+ //            'grocery_icon': 'pizza',
+ //            'default': true,
+ //            'createdAt': new Date()
+ //         }, 
+ //         {  
+ //            'item': 'Onions', 
+ //            'grocery_icon': 'onion',
+ //            'default': true,
+ //            'createdAt': new Date()  
+ //         },
+ //         {
+ //         	'item': 'Ananas',
+ //            'grocery_icon': 'ananas',
+ //            'default': true,
+ //            'createdAt': new Date()  
+ //         }
+ //      ];
+ //    for (var i = 0; i < items.length; i++){
+ //      GroceryMarket.insert(items[i]);
+ //    }
+	// }
 
-	    for (var i = 0; i < items.length; i++){
-	      GroceryMarket.insert(items[i]);
-	    }
-	}
+});
+
+
+Accounts.onCreateUser(function(options, user) {
+       if(!options || !user) {
+        console.log('error creating user');
+        return;
+    } else {
+        if(options.profile) {
+            user.profile = options.profile;
+        }
+    }
+    return user;
 });
